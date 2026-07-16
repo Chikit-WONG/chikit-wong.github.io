@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Chi Kit Wong — Undergraduate student in Artificial Intelligence at HKUST (Guangzhou), interested in multimodal reasoning, embodied AI, world models, and brain–computer interfaces." />
+  <meta name="description" content="Chi Kit Wong — Undergraduate student in Artificial Intelligence at HKUST (Guangzhou), interested in multimodal reasoning, embodied AI, world models, and agents." />
   <meta name="author" content="Chi Kit Wong" />
   <meta property="og:title" content="Chi Kit Wong" />
   <meta property="og:description" content="Academic homepage of Chi Kit Wong, an undergraduate student in Artificial Intelligence at HKUST (Guangzhou)." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://chikit-wong.github.io/portrait.jpg" />
-  <meta name="theme-color" content="#f7f5ef" />
+  <meta name="theme-color" content="#ffffff" />
   <title>Chi Kit Wong</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -17,230 +17,187 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Back to top">CKW<span>.</span></a>
-      <nav aria-label="Primary navigation">
+    <div class="page-width nav-inner">
+      <a class="site-name" href="#top">Chi Kit Wong</a>
+      <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+      <nav id="site-nav" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
         <a href="#honors">Honors</a>
       </nav>
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
-        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path></svg>
-        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-      </button>
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero" id="top">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">UNDERGRADUATE RESEARCHER · ARTIFICIAL INTELLIGENCE</p>
-          <h1>Chi Kit Wong</h1>
-          <p class="hero-lead">
-            I study how intelligent systems perceive, reason, and interact across
-            <strong>visual, language, and neural signals</strong>.
-          </p>
-          <p class="affiliation">HKUST (Guangzhou) · Guangzhou, China</p>
-          <div class="hero-actions">
-            <a class="button primary" href="mailto:ckwong627@connect.hkust-gz.edu.cn">Email me</a>
-            <a class="button secondary" href="#projects">View projects</a>
-          </div>
-          <div class="social-row" aria-label="Academic profiles">
-            <a href="https://github.com/Chikit-WONG" target="_blank" rel="noreferrer" aria-label="GitHub">GitHub</a>
-            <a href="https://scholar.google.com/citations?user=vm7x8yEAAAAJ&hl=en" target="_blank" rel="noreferrer" aria-label="Google Scholar">Google Scholar</a>
-            <a href="https://openreview.net/profile?id=~Chi_Kit_WONG1" target="_blank" rel="noreferrer" aria-label="OpenReview">OpenReview</a>
-            <a href="https://orcid.org/0009-0007-6098-3239" target="_blank" rel="noreferrer" aria-label="ORCID">ORCID</a>
-          </div>
-        </div>
+  <main id="main" class="page-width">
+    <section class="profile" id="top">
+      <div class="profile-photo-wrap">
+        <img class="profile-photo" src="portrait.jpg" alt="Portrait of Chi Kit Wong" />
+      </div>
+      <div class="profile-info">
+        <h1>Chi Kit Wong</h1>
+        <p class="role">Undergraduate Student</p>
+        <p class="affiliation">Artificial Intelligence<br />The Hong Kong University of Science and Technology (Guangzhou)</p>
+        <a class="email" href="mailto:ckwong627@connect.hkust-gz.edu.cn">ckwong627@connect.hkust-gz.edu.cn</a>
 
-        <div class="portrait-wrap reveal" aria-label="Portrait of Chi Kit Wong">
-          <div class="portrait-frame">
-            <img src="portrait.jpg" alt="Portrait of Chi Kit Wong" />
-          </div>
-          <div class="portrait-note">
-            <span class="status-dot" aria-hidden="true"></span>
-            Open to research collaboration
-          </div>
+        <div class="profile-links" aria-label="Academic and professional profiles">
+          <a href="https://scholar.google.com/citations?user=vm7x8yEAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+          <a href="https://github.com/Chikit-WONG" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://openreview.net/profile?id=~Chi_Kit_WONG1" target="_blank" rel="noreferrer">OpenReview</a>
+          <a href="https://orcid.org/0009-0007-6098-3239" target="_blank" rel="noreferrer">ORCID</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="container two-col">
-        <div>
-          <p class="section-index">01</p>
-          <h2>About</h2>
-        </div>
-        <div class="prose reveal">
-          <p>
-            I am an undergraduate student majoring in <strong>Artificial Intelligence</strong>
-            at the Hong Kong University of Science and Technology (Guangzhou).
-          </p>
-          <p>
-            My current interests lie at the intersection of multimodal learning and intelligent
-            interaction. I am particularly interested in building models that can connect perception,
-            reasoning, and action, as well as exploring how neural signals can be aligned with modern
-            vision-language representations.
-          </p>
-          <p>
-            I enjoy turning research ideas into reproducible systems, from model design and training
-            to evaluation, analysis, and clear technical communication.
-          </p>
-        </div>
+    <section class="content-section" id="about">
+      <h2>About Me</h2>
+      <div class="section-body prose">
+        <p>
+          Hi! I am <strong>Chi Kit Wong</strong>, an undergraduate student majoring in
+          <strong>Artificial Intelligence</strong> at The Hong Kong University of Science and Technology
+          (Guangzhou).
+        </p>
+        <p>
+          My research focuses on multimodal reasoning and agentic intelligence. I am interested in
+          building systems that connect perception, reasoning, planning, and action, especially for
+          unified multimodal models and egocentric understanding.
+        </p>
       </div>
     </section>
 
-    <section class="section tinted" id="research">
-      <div class="container">
-        <div class="section-heading">
+    <section class="content-section" id="research">
+      <h2>Research Interests</h2>
+      <div class="section-body interest-list">
+        <article>
+          <h3>Multimodal Reasoning</h3>
+          <p>Reasoning across vision, language, and other modalities for grounded understanding and generation.</p>
+        </article>
+        <article>
+          <h3>Embodied AI</h3>
+          <p>Understanding egocentric observations, spatial relationships, human intent, and interaction in real environments.</p>
+        </article>
+        <article>
+          <h3>World Models</h3>
+          <p>Learning predictive representations of environments to support simulation, planning, and decision-making.</p>
+        </article>
+        <article>
+          <h3>Agent</h3>
+          <p>Developing autonomous systems that can reason, plan, use tools, learn from feedback, and act toward long-horizon goals.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section" id="projects">
+      <div class="section-title-row">
+        <h2>Selected Projects</h2>
+        <p>Research preprints and ongoing work.</p>
+      </div>
+
+      <div class="publication-list">
+        <article class="publication">
+          <div class="paper-visual paper-visual-uig" aria-hidden="true">
+            <span class="paper-kicker">Unified Model</span>
+            <strong>UiG</strong>
+            <span>Understanding → Editing → Generation</span>
+          </div>
+          <div class="paper-content">
+            <div class="paper-labels">
+              <span class="status">Under Review</span>
+              <span class="year">arXiv 2025</span>
+            </div>
+            <h3>
+              <a href="https://arxiv.org/abs/2509.18639" target="_blank" rel="noreferrer">
+                Understanding-in-Generation: Reinforcing Generative Capability of Unified Model via Infusing Understanding into Generation
+              </a>
+            </h3>
+            <p class="authors">
+              Yuanhuiyi Lyu, <strong>Chi Kit Wong</strong>, Chenfei Liao, Lutao Jiang, Xu Zheng,
+              Zexin Lu, Linfeng Zhang, Xuming Hu
+            </p>
+            <p class="paper-summary">
+              A reasoning framework that uses image editing as a bridge to inject a unified model's
+              understanding capability into the image-generation process, enabling iterative verification
+              and refinement of generated images.
+            </p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2509.18639" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/QC-LY/UiG" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication">
+          <div class="paper-visual paper-visual-ego" aria-hidden="true">
+            <span class="paper-kicker">Egocentric Video</span>
+            <strong>EgoIntent</strong>
+            <span>What · Why · Next</span>
+          </div>
+          <div class="paper-content">
+            <div class="paper-labels">
+              <span class="status">Under Review</span>
+              <span class="year">arXiv 2026</span>
+            </div>
+            <h3>
+              <a href="https://arxiv.org/abs/2603.12147" target="_blank" rel="noreferrer">
+                EgoIntent: An Egocentric Step-level Benchmark for Understanding What, Why, and Next
+              </a>
+            </h3>
+            <p class="authors">
+              Ye Pan, <strong>Chi Kit Wong</strong>, Yuanhuiyi Lyu, Hanqian Li, Jiahao Huo,
+              Jiacheng Chen, Lutao Jiang, Xu Zheng, Xuming Hu
+            </p>
+            <p class="paper-summary">
+              A step-level benchmark for egocentric intent understanding that evaluates what a person is
+              doing, why the action is being performed, and what is likely to happen next without leaking
+              future frames.
+            </p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2603.12147" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section" id="education">
+      <h2>Education</h2>
+      <div class="section-body timeline-list">
+        <article class="timeline-item">
           <div>
-            <p class="section-index">02</p>
-            <h2>Research Interests</h2>
+            <h3>B.Eng. in Artificial Intelligence</h3>
+            <p>The Hong Kong University of Science and Technology (Guangzhou)</p>
           </div>
-          <p>Topics I am currently exploring.</p>
-        </div>
-        <div class="interest-grid">
-          <article class="interest-card reveal">
-            <span>01</span>
-            <h3>Multimodal Reasoning</h3>
-            <p>Connecting vision, language, and other modalities for grounded understanding and reasoning.</p>
-          </article>
-          <article class="interest-card reveal">
-            <span>02</span>
-            <h3>Embodied AI</h3>
-            <p>Agents that perceive their environments, reason about space, and take purposeful actions.</p>
-          </article>
-          <article class="interest-card reveal">
-            <span>03</span>
-            <h3>World Models</h3>
-            <p>Learning compact internal representations that support prediction, planning, and interaction.</p>
-          </article>
-          <article class="interest-card reveal">
-            <span>04</span>
-            <h3>Brain–Computer Interfaces</h3>
-            <p>Aligning EEG and fMRI signals with visual representations for neural decoding and generation.</p>
-          </article>
-        </div>
+          <span>2023 – Present</span>
+        </article>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-heading">
+    <section class="content-section" id="honors">
+      <h2>Honors and Awards</h2>
+      <div class="section-body timeline-list">
+        <article class="timeline-item">
           <div>
-            <p class="section-index">03</p>
-            <h2>Selected Projects</h2>
+            <h3>Sustainable Innovators Program Best Project Award — Third Prize</h3>
+            <p>HKUST × HKUST (Guangzhou)</p>
           </div>
-          <p>Research and technical work that best represents my current direction.</p>
-        </div>
-
-        <div class="project-list">
-          <article class="project reveal">
-            <div class="project-meta">
-              <span>Undergraduate Research Project</span>
-              <span>2026</span>
-            </div>
-            <div class="project-body">
-              <div>
-                <h3>Brain-to-Image Retrieval and Reconstruction via Multimodal EEG Alignment</h3>
-                <p>
-                  A complete EEG-to-image system on the THINGS-EEG dataset, covering 200-way image
-                  retrieval and image reconstruction. The project aligns neural signals with visual
-                  embedding spaces and studies set-level constrained retrieval.
-                </p>
-                <p class="advisor">Research advisor: Chen Liang</p>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/Chikit-WONG/DL_Project" target="_blank" rel="noreferrer">Code ↗</a>
-                <a href="https://github.com/Chikit-WONG/Brain-to-Image-Retrieval-and-Reconstructionvia-Multi-Modal-EEG-Alignment" target="_blank" rel="noreferrer">Report ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project reveal">
-            <div class="project-meta">
-              <span>Undergraduate Research Project</span>
-              <span>2025–2026</span>
-            </div>
-            <div class="project-body">
-              <div>
-                <h3>Spatially Enhanced Egocentric Visual Question Answering</h3>
-                <p>
-                  Research on improving spatial understanding in egocentric visual question answering,
-                  with a focus on representing relationships among objects, viewpoints, and the surrounding scene.
-                </p>
-                <p class="advisor">Research advisor: Xuming Hu</p>
-              </div>
-              <div class="project-links">
-                <span class="muted-link">Ongoing work</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project reveal">
-            <div class="project-meta">
-              <span>Course Research Project</span>
-              <span>2025</span>
-            </div>
-            <div class="project-body">
-              <div>
-                <h3>Semantic Similarity Measurement in Latent Space for LLM Prediction Evaluation</h3>
-                <p>
-                  An empirical study of embedding-based evaluation for language-model answers, comparing
-                  representation models such as BGE, MiniLM, and E5 and examining where cosine similarity
-                  succeeds or fails for longer responses.
-                </p>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/Chikit-WONG/2025Fall_DSAA2011_Course_Project" target="_blank" rel="noreferrer">Repository ↗</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section tinted" id="honors">
-      <div class="container two-col">
-        <div>
-          <p class="section-index">04</p>
-          <h2>Honors</h2>
-        </div>
-        <div class="honor-list reveal">
-          <div class="honor-item">
-            <div>
-              <h3>Sustainable Innovators Program Best Project Award</h3>
-              <p>Third Prize · HKUST × HKUST (Guangzhou)</p>
-            </div>
-            <span>2026</span>
+          <span>2026</span>
+        </article>
+        <article class="timeline-item">
+          <div>
+            <h3>Academic Excellence Award and Outstanding Performance Award</h3>
+            <p>Greater Bay Area Outstanding Hong Kong Students Program</p>
           </div>
-          <div class="honor-item">
-            <div>
-              <h3>Academic Excellence Award & Outstanding Performance Award</h3>
-              <p>Greater Bay Area Outstanding Hong Kong Students Program</p>
-            </div>
-            <span>2026</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section">
-      <div class="container contact-inner reveal">
-        <p class="eyebrow">LET'S CONNECT</p>
-        <h2>Interested in discussing research?</h2>
-        <p>I am happy to connect with researchers and students working on related topics.</p>
-        <a class="button primary" href="mailto:ckwong627@connect.hkust-gz.edu.cn">ckwong627@connect.hkust-gz.edu.cn</a>
+          <span>2026</span>
+        </article>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container footer-inner">
+    <div class="page-width footer-inner">
       <p>© <span id="year"></span> Chi Kit Wong</p>
-      <p>Built for GitHub Pages.</p>
+      <p>Last updated July 2026</p>
     </div>
   </footer>
 
