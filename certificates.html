@@ -20,8 +20,6 @@
     h2 { margin: 0 0 18px; font: 500 clamp(1.2rem, 3vw, 1.65rem)/1.3 Georgia, "Times New Roman", serif; }
     .certificate-frame { min-height: 180px; display: grid; place-items: center; padding: 12px; border: 1px solid #dfe5ec; background: white; box-shadow: 0 12px 32px rgba(25, 40, 55, .12); }
     .certificate-frame img { display: block; width: auto; max-width: 100%; height: auto; max-height: 86vh; margin: auto; }
-    .loading-message, .error-message { padding: 36px 18px; color: #626b76; text-align: center; }
-    .error-message { color: #9d2d2d; }
     section > p { margin: 14px 0 0; text-align: center; font-size: .88rem; }
   </style>
 </head>
@@ -40,8 +38,8 @@
 
     <section id="mcm-finalist-2026">
       <h2>2026 Mathematical Contest in Modeling — Finalist</h2>
-      <div class="certificate-frame" id="mcm-frame">
-        <p class="loading-message">Loading certificate…</p>
+      <div class="certificate-frame">
+        <img src="assets/certificates/mcm-finalist-2026.webp" alt="2026 Mathematical Contest in Modeling Finalist certificate" width="1584" height="1224" decoding="async" />
       </div>
       <p><a href="#top">Back to top</a> · <a href="./#honors">Back to homepage</a></p>
     </section>
@@ -49,7 +47,7 @@
     <section id="sustainable-innovators-third-prize-2026">
       <h2>Sustainable Innovators Program 2026 — Best Project Award, Third Prize</h2>
       <div class="certificate-frame">
-        <img src="assets/certificates/sustainable-innovators-third-prize-2026.webp" alt="Sustainable Innovators Program 2026 Best Project Award Third Prize certificate" loading="lazy" />
+        <img src="assets/certificates/sustainable-innovators-third-prize-2026.webp" alt="Sustainable Innovators Program 2026 Best Project Award Third Prize certificate" width="1685" height="1192" loading="lazy" decoding="async" />
       </div>
       <p><a href="#top">Back to top</a> · <a href="./#honors">Back to homepage</a></p>
     </section>
@@ -57,7 +55,7 @@
     <section id="academic-excellence-award-2026">
       <h2>Greater Bay Area Outstanding Hong Kong Students 2026 — Academic Excellence Award</h2>
       <div class="certificate-frame">
-        <img src="assets/certificates/academic-excellence-award-2026.webp" alt="Academic Excellence Award certificate" loading="lazy" />
+        <img src="assets/certificates/academic-excellence-award-2026.webp" alt="Academic Excellence Award certificate" width="1920" height="1240" loading="lazy" decoding="async" />
       </div>
       <p><a href="#top">Back to top</a> · <a href="./#honors">Back to homepage</a></p>
     </section>
@@ -65,46 +63,10 @@
     <section id="outstanding-performance-award-2026">
       <h2>Greater Bay Area Outstanding Hong Kong Students 2026 — Outstanding Performance Award</h2>
       <div class="certificate-frame">
-        <img src="assets/certificates/outstanding-performance-award-2026.webp" alt="Outstanding Performance Award certificate" loading="lazy" />
+        <img src="assets/certificates/outstanding-performance-award-2026.webp" alt="Outstanding Performance Award certificate" width="1920" height="1245" loading="lazy" decoding="async" />
       </div>
       <p><a href="#top">Back to top</a> · <a href="./#honors">Back to homepage</a></p>
     </section>
   </main>
-
-  <script>
-    (async () => {
-      const frame = document.getElementById('mcm-frame');
-      const message = frame.querySelector('.loading-message');
-
-      try {
-        const response = await fetch('assets/certificates/mcm-finalist-2026.webp', { cache: 'no-cache' });
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-
-        const base64 = (await response.text()).replace(/\s+/g, '');
-        const binary = atob(base64);
-        const bytes = new Uint8Array(binary.length);
-        for (let i = 0; i < binary.length; i += 1) bytes[i] = binary.charCodeAt(i);
-
-        const url = URL.createObjectURL(new Blob([bytes], { type: 'image/webp' }));
-        const image = new Image();
-        image.alt = '2026 Mathematical Contest in Modeling Finalist certificate';
-        image.onload = () => {
-          message.remove();
-          frame.append(image);
-          URL.revokeObjectURL(url);
-        };
-        image.onerror = () => {
-          message.className = 'error-message';
-          message.textContent = 'The certificate could not be displayed.';
-          URL.revokeObjectURL(url);
-        };
-        image.src = url;
-      } catch (error) {
-        message.className = 'error-message';
-        message.textContent = 'The certificate could not be loaded.';
-        console.error(error);
-      }
-    })();
-  </script>
 </body>
 </html>
